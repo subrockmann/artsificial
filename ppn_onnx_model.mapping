@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="14" out_port_id="14"/>
+		<IR id="10" name="15/1_port_transpose232_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="9" out_port_id="9"/>
+		<IR id="5" name="9" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="7" out_port_id="7"/>
+		<IR id="3" name="7" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="15" out_port_id="15"/>
+		<IR id="11" name="15" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="16" out_port_id="16"/>
+		<IR id="12" name="16" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="17" out_port_id="0"/>
+		<IR id="13" name="17" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="5" out_port_id="5"/>
+		<IR id="1" name="6/1_port_transpose236_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="10" out_port_id="10"/>
+		<IR id="6" name="10" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="input.1" out_port_id="input.1"/>
+		<IR id="0" name="input.1" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="12" out_port_id="12"/>
+		<IR id="8" name="12" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="13" out_port_id="13"/>
+		<IR id="9" name="13" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="11" out_port_id="11"/>
+		<IR id="7" name="12/1_port_transpose244_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="6" out_port_id="6"/>
+		<IR id="2" name="6" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="8" out_port_id="8"/>
+		<IR id="4" name="9/1_port_transpose240_const" out_port_id="1"/>
+	</map>
+</mapping>
