@@ -24,6 +24,8 @@ and modify it according to our desired outputs.
 
 ### Tests & Example Outputs
 
+[![Video with compositional pattern images]({image-url})]({https://github.com/subrockmann/artsificial/blob/master/videos/2020-02-25%2000-39-28-888677%2060fps%200.1scale.avi} "60 fps video")
+
 ## Getting Started
 
 In order to get a copy of this project up and running on your local machine for development and testing purposes, please follow the instructions below.
