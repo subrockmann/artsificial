@@ -24,7 +24,7 @@ and modify it according to our desired outputs.
 
 ### Tests & Example Outputs
 
-[![Video with compositional pattern images]({image-url})]({https://github.com/subrockmann/artsificial/blob/master/videos/2020-02-25%2000-39-28-888677%2060fps%200.1scale.avi} "60 fps video")
+[![GIF with Compositional Pattern Images]({image-url})]({https://i.ibb.co/5xbW0MF/Webp-net-gifmaker.gif} "60 fps video")
 
 ## Getting Started
 
