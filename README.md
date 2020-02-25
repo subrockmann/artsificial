@@ -44,7 +44,7 @@ In order to get a copy of this project up and running on your local machine for 
 
 * [PyTorch](https://pytorch.org/) - For AI model development
 * [ONNX](https://onnx.ai/) - To convert the model for use with the Inference Engine
-* [OpenVINO™ toolkit](https://docs.openvinotoolkit.org/) - For application development
+* [OpenVINO™ toolkit](https://docs.openvinotoolkit.org/) - For the application development
 
 
 ## Contributing
