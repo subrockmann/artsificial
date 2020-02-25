@@ -19,10 +19,9 @@ A source of inspiration was the [Computer Vision Art Gallery](https://computervi
 We were fascinated by the Compositional Pattern Producing Networks and, since we didn't have any previous experience, we started learning more about them from the published resources, while exploring their possibilities. Finally, we agreed to use as a base source a [PyTorch implementation of a CPPN](https://github.com/jtguibas/cppn-art), and modify it according to our desired outputs.
 
 Our work is heavily influenced by the following work:<br/>
-
 [https://github.com/jtguibas/cppn-art](https://github.com/jtguibas/cppn-art)<br/>
 [https://github.com/wottpal/cppn-keras](https://github.com/wottpal/cppn-keras)<br/>
-[https://github.com/paraschopra/abstract-art-neural-network] (https://github.com/paraschopra/abstract-art-neural-network)
+[https://github.com/paraschopra/abstract-art-neural-network](https://github.com/paraschopra/abstract-art-neural-network)
 
 
 
@@ -47,6 +46,22 @@ In order to get a copy of this project up and running on your local machine for 
 * Install the respective Intel® Distribution of OpenVINO™ toolkit for Windows 10 / Mac OS / Linux, following all the required steps on the [documentation guide](https://docs.openvinotoolkit.org/latest/index.html).
 
 ## How to run the project
+
+* setup the environment variables to run the openVINO application
+```
+source /opt/intel/openvino/bin/setupvars.sh
+```
+* start jupyter notebook server
+* run the jupyter notebooks
+
+## Overview
+
+* [1 - Generate Arts.ipynb](https://github.com/subrockmann/artsificial/blob/master/1%20-%20Generate%20Arts.ipynb)<br/>
+This notebook give a visual introduction to the generative process and the different parameters.
+* ## ADD Notebook 2
+* ## ADD Notebook 3
+* [4 - Code exploration and alternative algorithms.ipynb](https://github.com/subrockmann/artsificial/blob/master/4%20-%20Code%20exploration%20and%20alternative%20algorithms.ipynb)<br/>
+This notebook contains code that helps to understand the basic algorithm used in notebook 1 and explores a different algorithm for generative art. 
 
 ## Built with
 
