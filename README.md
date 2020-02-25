@@ -29,28 +29,6 @@ Our work is heavily influenced by the following work:<br/>
 
 ![GIF with Compositional Pattern Images](images/Webp.net-gifmaker.gif)
 
-#### Model 2
-<table>
-  <tr>
-    <td align="center">
-        <img src="images/GIFs/2020-02-24%2022-41-30-895821%2015fps.gif" width="200px;" alt="">
-        Sample 1: 15 FPS<br>Scale: 0.3
-    </td>
-    <td align="center">
-        <img src="images/GIFs/2020-02-25%2000-04-58-181153%2015%20fps.gif" width="200px;" alt="">
-        Sample 2: 15 FPS<br>Scale: 0.3
-    </td>
-    <td align="center">
-        <img src="images/GIFs/2020-02-25%2000-39-28-888677%2030fps%200.1scale.gif" width="200px;" alt="">
-        Sample 3: 30 FPS<br>Scale: 0.1
-    </td>
-    <td align="center">
-        <img src="images/GIFs/2020-02-25%2000-50-24-985116%2030fps%20slow-change.gif" width="200px;" alt="">
-        Sample 1: 30 FPS<br>slow-change
-    </td>
-  </tr>
-</table>
-
 ## Getting Started
 
 In order to get a copy of this project up and running on your local machine for development and testing purposes, please follow the instructions below.
@@ -83,7 +61,7 @@ This notebook give a visual introduction to the generative process and the diffe
 * ## ADD Notebook 2
 * ## ADD Notebook 3
 * [4 - Code exploration and alternative algorithms.ipynb](https://github.com/subrockmann/artsificial/blob/master/4%20-%20Code%20exploration%20and%20alternative%20algorithms.ipynb)<br/>
-This notebook contains code that helps to understand the basic algorithm used in notebook 1 and explores a different algorithm for generative art. 
+This notebook contains code that helps to understand the basic algorithm used in notebook 1 and explores a different algorithm for generative art.
 
 ## Built with
 
