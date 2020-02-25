@@ -29,6 +29,28 @@ Our work is heavily influenced by the following work:<br/>
 
 ![GIF with Compositional Pattern Images](images/Webp.net-gifmaker.gif)
 
+#### Model 2
+<table>
+  <tr>
+    <td align="center">
+        <img src="images/GIFs/2020-02-24%2022-41-30-895821%2015fps.gif" width="200px;" alt="">
+        Sample 1: 15 FPS<br>Scale: 0.3
+    </td>
+    <td align="center">
+        <img src="images/GIFs/2020-02-25%2000-04-58-181153%2015%20fps.gif" width="200px;" alt="">
+        Sample 2: 15 FPS<br>Scale: 0.3
+    </td>
+    <td align="center">
+        <img src="images/GIFs/2020-02-25%2000-39-28-888677%2030fps%200.1scale.gif" width="200px;" alt="">
+        Sample 3: 30 FPS<br>Scale: 0.1
+    </td>
+    <td align="center">
+        <img src="images/GIFs/2020-02-25%2000-50-24-985116%2030fps%20slow-change.gif" width="200px;" alt="">
+        Sample 1: 30 FPS<br>slow-change
+    </td>
+  </tr>
+</table>
+
 ## Getting Started
 
 In order to get a copy of this project up and running on your local machine for development and testing purposes, please follow the instructions below.
