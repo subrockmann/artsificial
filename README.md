@@ -66,7 +66,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Aknowledgements
 
 * Intel® Edge AI Scholaship Challenge at Udacity, for the chance to study within an amazing community.
-* John Guibas, for his PyTorch implementetion of CPPNs.
 * Mariia Denysenko, for the administration of the #sg_spaic and the presentation of CPPNs to the study group.
+* John Guibas, for his PyTorch implementetion of CPPNs.
 
 
