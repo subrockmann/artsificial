@@ -24,7 +24,9 @@ and modify it according to our desired outputs.
 
 ### Tests & Example Outputs
 
-![](images/Webp.net-gifmaker.gif)
+[![Video with Compositional Pattern Images]({images/model-2-generated-sequence-sample-1/2020-02-25 00-26-16-328865.png})]({videos/2020-02-25 00-39-28-888677 60fps 0.1scale.avi} "Link Title")
+
+![GIF with Compositional Pattern Images](images/Webp.net-gifmaker.gif)
 
 ## Getting Started
 
