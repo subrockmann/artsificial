@@ -14,9 +14,9 @@ Nanodegree Scholarship at Udacity, during which we successfuly graduated from th
 During the Intel® Edge AI Scholaship Challenge, along with other scholars from the Secure and Private AI Scholarship, we formed a study group on Slack and kept communicating and sharing ideas, resources and concerns.
 
 After the announcement for the [Prject Showcase Challenge](https://sites.google.com/udacity.com/intel-edge-ai-scholarship/community/project-showcase?authuser=0), we started exploring the idea of creating a project in the Arts category.
-A source of inspiration was the [Computer Vision Art Gallery](https://computervisionart.com/), along with other other impressive projects of Contemporary Art which use AI.
+A source of inspiration was the [Computer Vision Art Gallery](https://computervisionart.com/), along with some other impressive projects of Contemporary Art which use AI.
 
-We were impressed by the Compositional Pattern Producing Networks and, since we hadn't any previous experience, we started learning more about them from the published resources while exploring their possibilities. Finally, we agreed to use as a base source a [PyTorch implementation of a CPPN](https://github.com/jtguibas/cppn-art), and modify it according to our desired outputs.
+We were fascinated by the Compositional Pattern Producing Networks and, since we didn't have any previous experience, we started learning more about them from the published resources, while exploring their possibilities. Finally, we agreed to use as a base source a [PyTorch implementation of a CPPN](https://github.com/jtguibas/cppn-art), and modify it according to our desired outputs.
 
 ### Tests & Example Outputs
 
