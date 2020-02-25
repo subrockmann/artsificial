@@ -24,7 +24,7 @@ and modify it according to our desired outputs.
 
 ### Tests & Example Outputs
 
-[![GIF with Compositional Pattern Images]({image-url})]({https://i.ibb.co/5xbW0MF/Webp-net-gifmaker.gif} "60 fps video")
+![](images/Webp.net-gifmaker.gif)
 
 ## Getting Started
 
