@@ -18,9 +18,11 @@ A source of inspiration was the [Computer Vision Art Gallery](https://computervi
 
 We were fascinated by the Compositional Pattern Producing Networks and, since we didn't have any previous experience, we started learning more about them from the published resources, while exploring their possibilities. Finally, we agreed to use as a base source a [PyTorch implementation of a CPPN](https://github.com/jtguibas/cppn-art), and modify it according to our desired outputs.
 
-Our work is heavily influenced by the following work:
-[https://github.com/jtguibas/cppn-art](https://github.com/jtguibas/cppn-art)
-[https://github.com/wottpal/cppn-keras](https://github.com/wottpal/cppn-keras)
+Our work is heavily influenced by the following work:<br/>
+
+[https://github.com/jtguibas/cppn-art](https://github.com/jtguibas/cppn-art)<br/>
+[https://github.com/wottpal/cppn-keras](https://github.com/wottpal/cppn-keras)<br/>
+[https://github.com/paraschopra/abstract-art-neural-network] (https://github.com/paraschopra/abstract-art-neural-network)
 
 
 
