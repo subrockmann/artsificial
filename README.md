@@ -63,7 +63,7 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-## Aknowledgements
+## Acknowledgements
 
 * Intel® Edge AI Scholaship Challenge at Udacity, for the chance to study within an amazing community.
 * Mariia Denysenko, for the administration of the #sg_spaic and the presentation of CPPNs to the study group.
