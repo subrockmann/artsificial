@@ -19,7 +19,7 @@ A source of inspiration was the [Computer Vision Art Gallery](https://computervi
 We were fascinated by the Compositional Pattern Producing Networks and, since we didn't have any previous experience, we started learning more about them from the published resources, while exploring their possibilities. Finally, we agreed to use as a base source a [PyTorch implementation of a CPPN](https://github.com/jtguibas/cppn-art), and modify it according to our desired outputs.
 
 Our work is heavily influenced by the following work:<br/>
-[https://github.com/jtguibas/cppn-art](https://github.com/jtguibas/cppn-art)<br/>
+
 [https://github.com/wottpal/cppn-keras](https://github.com/wottpal/cppn-keras)<br/>
 [https://github.com/paraschopra/abstract-art-neural-network](https://github.com/paraschopra/abstract-art-neural-network)
 
@@ -31,11 +31,11 @@ Our work is heavily influenced by the following work:<br/>
 <table>	
   <tr>	
     <td align="center">	
-        <img src="images/GIFs/black&white-patternsGIF.gif" width="200px;" alt="">	
+        <img src="images/GIFs/black&white-patterns.gif" width="200px;" alt="">	
         Sample 1: Greyscale<br>Scale: 0.1	
     </td>	
     <td align="center">	
-        <img src="images/GIFs/enhanced-black&whiteGIF.gif" width="200px;" alt="">	
+        <img src="images/GIFs/enhanced-black&white.gif" width="200px;" alt="">	
         Sample 2: Enhanced B&W<br>Scale: 0.1	
     </td>	
     <td align="center">	
