@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="ln2.weight" out_port_id="ln2.weight"/>
+		<IR id="6" name="onnx_initializer_node_ln2.weight/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="15" out_port_id="15"/>
+		<IR id="15" name="15" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="ln1.weight" out_port_id="ln1.weight"/>
+		<IR id="1" name="onnx_initializer_node_ln1.weight/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="19" out_port_id="19"/>
+		<IR id="22" name="19" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="ln3.weight" out_port_id="ln3.weight"/>
+		<IR id="11" name="onnx_initializer_node_ln3.weight/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="12" out_port_id="12"/>
+		<IR id="9" name="12" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="16" out_port_id="16"/>
+		<IR id="19" name="16" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="14" out_port_id="14"/>
+		<IR id="14" name="14" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="18" out_port_id="18"/>
+		<IR id="21" name="19/1_port_transpose474_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="input.1" out_port_id="input.1"/>
+		<IR id="0" name="input.1" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="11" out_port_id="11"/>
+		<IR id="5" name="11" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="17" out_port_id="17"/>
+		<IR id="20" name="17" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="13" out_port_id="13"/>
+		<IR id="10" name="13" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="20" out_port_id="0"/>
+		<IR id="23" name="20" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="10" out_port_id="10"/>
+		<IR id="4" name="10" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="ln3a.weight" out_port_id="ln3a.weight"/>
+		<IR id="16" name="onnx_initializer_node_ln3a.weight/Output_0/Data__const" out_port_id="1"/>
+	</map>
+</mapping>
