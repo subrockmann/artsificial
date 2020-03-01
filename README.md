@@ -2,12 +2,12 @@
 ## Generating art with neural networks
 
 This project uses the [OpenVINO™ toolkit](https://docs.openvinotoolkit.org/) to deploy a deep learning solution for Art Generation 
-with Compositional Pattern Producing Networks, while exploring the possibilities for the different patterns and color palletes that 
+with Compositional Pattern Producing Networks, while exploring the possibilities for the different patterns and color palettes that 
 can be produced.
 
 ### Project's story
 
-All of us had the chance to be selected for the Intel® Edge AI Scholaship Challenge at Udacity.
+All of us had the chance to be selected for the Intel® Edge AI Scholarship Challenge at Udacity.
 Before that we had won the Secure and Private AI Scholarship Challenge by Facebook AI and were selected for a follow up 
 Nanodegree Scholarship at Udacity, during which we successfuly graduated from the Computer Vision Nanodegree.
 
@@ -31,19 +31,19 @@ Our work is heavily influenced by the following work:<br/>
 <table>	
   <tr>	
     <td align="center">	
-        <img src="images/GIFs/black&white-patternsGIF.gif" width="500px;" alt="">	
+        <img src="images/GIFs/black&white-patternsGIF.gif" width="200px;" alt="">	
         Sample 1: Greyscale<br>Scale: 0.1	
     </td>	
     <td align="center">	
-        <img src="images/GIFs/enhanced-black&whiteGIF.gif" width="500px;" alt="">	
+        <img src="images/GIFs/enhanced-black&whiteGIF.gif" width="200px;" alt="">	
         Sample 2: Enhanced B&W<br>Scale: 0.1	
     </td>	
     <td align="center">	
-        <img src="images/GIFs/Webp.net-gifmaker.gif" width="500px;" alt="">	
+        <img src="images/GIFs/Webp.net-gifmaker.gif" width="200px;" alt="">	
         Sample 3: RGB Palette<br>Scale: 0.3	
     </td>	
     <td align="center">	
-        <img src="images/GIFs/gifmaker2.gif" width="500px;" alt="">	
+        <img src="images/GIFs/gifmaker2.gif" width="200px;" alt="">	
         Sample 4: High Resolution<br>Scale: 0.8	
     </td>	
   </tr>	
@@ -53,19 +53,19 @@ Our work is heavily influenced by the following work:<br/>
 <table>	
   <tr>	
     <td align="center">	
-        <img src="images/GIFs/2020-02-24%2022-41-30-895821%2015fps.gif" width="500px;" alt="">	
+        <img src="images/GIFs/2020-02-24%2022-41-30-895821%2015fps.gif" width="200px;" alt="">	
         Sample 1: 15 FPS<br>Scale: 0.3	
     </td>	
     <td align="center">	
-        <img src="images/GIFs/2020-02-25%2000-04-58-181153%2015%20fps.gif" width="500px;" alt="">	
+        <img src="images/GIFs/2020-02-25%2000-04-58-181153%2015%20fps.gif" width="200px;" alt="">	
         Sample 2: 15 FPS<br>Scale: 0.3	
     </td>	
     <td align="center">	
-        <img src="images/GIFs/2020-02-25%2000-39-28-888677%2030fps%200.1scale.gif" width="500px;" alt="">	
+        <img src="images/GIFs/2020-02-25%2000-39-28-888677%2030fps%200.1scale.gif" width="200px;" alt="">	
         Sample 3: 30 FPS<br>Scale: 0.1	
     </td>	
     <td align="center">	
-        <img src="images/GIFs/2020-02-25%2000-50-24-985116%2030fps%20slow-change.gif" width="500px;" alt="">	
+        <img src="images/GIFs/2020-02-25%2000-50-24-985116%2030fps%20slow-change.gif" width="200px;" alt="">	
         Sample 1: 30 FPS<br>slow-change	
     </td>	
   </tr>	
