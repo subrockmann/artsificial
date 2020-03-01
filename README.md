@@ -9,7 +9,7 @@ can be produced.
 
 All of us had the chance to be selected for the Intel® Edge AI Scholarship Challenge at Udacity.
 Before that we had won the Secure and Private AI Scholarship Challenge by Facebook AI and were selected for a follow up 
-Nanodegree Scholarship at Udacity, during which we successfuly graduated from the Computer Vision Nanodegree.
+Nanodegree Scholarship at Udacity, during which we successfully graduated from the Computer Vision Nanodegree.
 
 During the Intel® Edge AI Scholaship Challenge, along with other scholars from the Secure and Private AI Scholarship, we formed a study group on Slack and kept communicating and sharing ideas, resources and concerns.
 
