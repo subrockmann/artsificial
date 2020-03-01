@@ -20,8 +20,8 @@ We were fascinated by the Compositional Pattern Producing Networks and, since we
 
 Our work is heavily influenced by the following work:<br/>
 
-[https://github.com/wottpal/cppn-keras](https://github.com/wottpal/cppn-keras)<br/>
-[https://github.com/paraschopra/abstract-art-neural-network](https://github.com/paraschopra/abstract-art-neural-network)
+* [CPPN in Keras 2](https://github.com/wottpal/cppn-keras)<br/>
+* [Generating abstract art using neural networks](https://github.com/paraschopra/abstract-art-neural-network)
 
 
 
@@ -125,9 +125,9 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 
 > Connect with us on LinkedIn
 
-## Licence
+## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgements
 
