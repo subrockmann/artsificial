@@ -117,8 +117,93 @@ class Network:
         return self.exec_network.requests[0].outputs[self.output_blob]
 
 
+
+
+def generate_patterns(args):
+    '''
+    Process output after inference
+    '''
+    
+    # Initialize the Inference Engine
+    plugin = Network()
+
+    # Load the network model into the IE
+    plugin.load_model(args.model, "HETERO:GPU,CPU")
+
+    z_size = 7
+    
+    def createInputVec(z, x, y):
+        '''
+        Creating input
+        '''
+        r = math.sqrt(((x * args.scale - (args.img_size * args.scale / 2))**2) + (
+            (y * args.scale - (args.img_size * args.scale / 2))**2))
+        z_size = len(z)
+        input = np.random.rand(1, z_size + 3)
+
+        for i in range(z_size):
+            input[0][i] = z[i] * args.scale
+
+        input[0][z_size] = x * args.scale
+        input[0][z_size + 1] = y * args.scale
+        input[0][z_size + 2] = r
+        return input
+    
+    frames = args.fps * args.seconds
+    file_name = str(datetime.datetime.now()).replace(":", "-").replace(".", "-") + '.avi'
+    print(file_name, end="")
+
+    fourcc = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
+    out = cv2.VideoWriter(file_name, fourcc, args.fps, (args.img_size, args.img_size))
+
+    #out = cv2.VideoWriter(file_name, cv2.VideoWriter_fourcc(*'DIVX'), args.fps, (args.img_size, args.img_size))
+
+    z = np.random.rand(z_size)
+    directions = np.ones(z_size)
+
+    for frame in range(frames):
+
+        reverse_directions = np.where(np.logical_or(z > 100, z < -100), -1, 1)
+        directions = directions * reverse_directions
+        change = np.random.rand(z_size) * args.pattern_change_speed
+        z = z + change * directions
+
+        input_batch = np.zeros((args.img_size, args.img_size, z_size + 3))
+        for i in range(args.img_size):
+
+            for j in range(args.img_size):
+                input_batch[i, j] = createInputVec(z, i, j)
+
+        input_batch.resize(args.img_size * args.img_size, z_size + 3)
+
+        # Perform inference on the input
+        plugin.async_inference(input_batch)
+
+        # Get the output of inference
+        if plugin.wait() == 0:
+            output_frame = plugin.extract_output()
+
+        output_frame = np.resize(output_frame, (args.img_size, args.img_size, 3))
+        output_frame = (output_frame * 255).astype(np.uint8)
+        out.write(output_frame)
+        
+        # saving each output_frame as PNG image
+        if args.save_frames:
+            plt.imsave(str(datetime.datetime.now()).replace(":", "-").replace(".", "-") + '.png', output_frame, format="png")
+        
+        if args.progress:
+            if (frame + 1) % args.fps == 1:
+                print("\nSec {:03d}:".format(int(frame / args.fps) + 1), end=" ")
+            print("{:3d}".format(frame + 1), end=" ")
+    out.release()
+    print("\nDone")
+
+
+
+
 def main():
     args = get_args()
+    generate_patterns(args)
 
 
 if __name__ == "__main__":
