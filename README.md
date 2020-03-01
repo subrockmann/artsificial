@@ -27,7 +27,7 @@ Our work is heavily influenced by the following work:<br/>
 
 ### Tests & Example Outputs
 
-![GIF with Compositional Pattern Images](images/Webp.net-gifmaker.gif)
+![GIF with Compositional Pattern Images](images/GIFs/Webp.net-gifmaker.gif)
 
 ## Getting Started
 
