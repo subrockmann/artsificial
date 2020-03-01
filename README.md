@@ -101,11 +101,11 @@ source /opt/intel/openvino/bin/setupvars.sh
 
 * [1 - Generate Arts.ipynb](https://github.com/subrockmann/artsificial/blob/master/1%20-%20Generate%20Arts.ipynb)<br/>
 This notebook provides a visual introduction to the generative process and the different parameters.
-* [2 - Generate Model 2.ipynb](https://github.com/subrockmann/artsificial/blob/master/2%20-%20Generate%20Model%202.ipynb)
+* [2 - Generate Model 2.ipynb](https://github.com/subrockmann/artsificial/blob/master/2%20-%20Generate%20Model%202.ipynb)</br>
 This notebook suggests a different approach for the Network's Architecture, which ends up to a different color palette and pattern production.
-* [3 - Model 1 - Inference.ipynb](https://github.com/subrockmann/artsificial/blob/master/3%20-%20Model%201%20-%20Inference.ipynb)
+* [3 - Model 1 - Inference.ipynb](https://github.com/subrockmann/artsificial/blob/master/3%20-%20Model%201%20-%20Inference.ipynb)</br>
 This notebook contains the required libraries and code to perform Inference on the first Model.
-* [4 - Model 2 - Inference.ipynb](https://github.com/subrockmann/artsificial/blob/master/4%20-%20Model%202%20-%20Inference.ipynb)
+* [4 - Model 2 - Inference.ipynb](https://github.com/subrockmann/artsificial/blob/master/4%20-%20Model%202%20-%20Inference.ipynb)</br>
 This notebook contains the required libraries and code to perform Inference on the second Model.
 * [5 - Code exploration and alternative algorithms.ipynb](https://github.com/subrockmann/artsificial/blob/master/4%20-%20Code%20exploration%20and%20alternative%20algorithms.ipynb)<br/>
 This notebook contains code that helps to understand the basic algorithm used in notebook 1 and explores a different algorithm for generative art.
