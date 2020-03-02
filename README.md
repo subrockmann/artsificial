@@ -5,6 +5,13 @@ This project uses the [OpenVINO™ toolkit](https://docs.openvinotoolkit.org/) t
 with Compositional Pattern Producing Networks, while exploring the possibilities for the different patterns and color palettes that 
 can be produced.
 
+### Introduction
+
+Compositional Pattern Producing Networks (CPPNs) are a variation of Artificial Neural Networks with an architecture based in mathematical functions and guided by genetic algorithms.
+CPPNs may include many more functions than only Sigmoid and Gaussian and the choice of applied functions can be biased towards different types of produced patterns and regularities. For example, Linear functions can be applied in order to produce linear or fractal-like patterns.
+Furthermore, neuroevolution techniques like Neuroevolution of Augmented Topologies (NEAT) can be applied to evolve CPPNs.
+
+
 ### Project's story
 
 All of us had the chance to be selected for the Intel® Edge AI Scholarship Challenge at Udacity.
@@ -140,3 +147,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 * John Guibas, for his PyTorch implementetion of CPPNs.
 
 
+## References
+
+* [Kenneth O' Stanley, Compositional Pattern Producing Networks: A Novel Abstraction of Development](https://eplex.cs.ucf.edu/papers/stanley_gpem07.pdf)
+* [Mattie Tesfaldet, Xavier Snelgrove, David Vazquez, Fourier-CPPNs for Image Synthesis](https://arxiv.org/pdf/1909.09273.pdf)
+* [Neuroevolution](https://en.wikipedia.org/wiki/Neuroevolution)
