@@ -19,6 +19,7 @@ def get_args():
     parser = argparse.ArgumentParser("Run inference")
     # -- Create the descriptions for the commands
     model_desc = "The location of the model XML file"
+    device_desc = "The devices on which the inference should be performed [CPU, GPU, FPGA, MYRIAD, HETERO:CPU,GPU]"
     
     fps_desc = "Number of Frames Per Second for the video"
     seconds_desc = "The duration of the video in seconds"
@@ -34,6 +35,7 @@ def get_args():
 
     # -- Create the arguments
     required.add_argument("--model", help=model_desc, required=True)
+    required.add_argument("--device", help=device_desc, default="CPU")
     
     optional.add_argument("--fps", help=fps_desc, default=10, type=int)
     optional.add_argument("--seconds", help=seconds_desc, default=5, type=int)
@@ -62,7 +64,7 @@ class Network:
         self.exec_network = None
         self.infer_request = None
 
-    def load_model(self, model, device="GPU"):
+    def load_model(self, model, device):
         '''
         Load the model given IR files.
         Defaults to CPU as device for use in the workspace.
@@ -126,7 +128,7 @@ def generate_patterns(args):
     plugin = Network()
 
     # Load the network model into the IE
-    plugin.load_model(args.model, "HETERO:GPU,CPU")
+    plugin.load_model(args.model, args.device)
 
     z_size = 7
     
