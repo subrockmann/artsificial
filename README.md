@@ -25,12 +25,6 @@ A source of inspiration was the [Computer Vision Art Gallery](https://computervi
 
 We were fascinated by the Compositional Pattern Producing Networks and, since we didn't have any previous experience, we started learning more about them from the published resources, while exploring their possibilities. Finally, we agreed to use as a base source a [PyTorch implementation of a CPPN](https://github.com/jtguibas/cppn-art), and modify it according to our desired outputs.
 
-Our work is heavily influenced by the following work:<br/>
-
-* [CPPN in Keras 2](https://github.com/wottpal/cppn-keras)<br/>
-* [Generating abstract art using neural networks](https://github.com/paraschopra/abstract-art-neural-network)
-
-
 
 ### Tests & Example Outputs
 
