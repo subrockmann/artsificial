@@ -64,7 +64,8 @@ class Network:
         self.exec_network = None
         self.infer_request = None
 
-    def load_model(self, model, device="GPU"):
+    #def load_model(self, model, device="GPU"):
+    def load_model(self, model, device="MYRIAD"):    
         '''
         Load the model given IR files.
         Defaults to CPU as device for use in the workspace.
@@ -128,7 +129,8 @@ def generate_patterns(args):
     plugin = Network()
 
     # Load the network model into the IE
-    plugin.load_model(args.model, "HETERO:GPU,CPU")
+    #plugin.load_model(args.model, "HETERO:GPU,CPU")
+    plugin.load_model(args.model, "MYRIAD")
 
     z_size = 7
     
