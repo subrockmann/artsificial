@@ -25,7 +25,6 @@ def get_args():
     img_size_desc = "The width or height for the frame to be generated"
     scale_desc = "Scale factor for inputs"
     p_c_speed_desc = "The rate of flow/change of the pattern"
-    progress_desc = "Display the progress of frame generation"
     save_frames_desc = "Save the individual frame generated as PNG images"
 
     # -- Add required and optional groups
@@ -41,7 +40,6 @@ def get_args():
     optional.add_argument("--img_size", help=img_size_desc, default=200, type=int)
     optional.add_argument("--scale", help=scale_desc, default=0.3, type=float)
     optional.add_argument("--pattern_change_speed", help=p_c_speed_desc, default=0.5, type=float)
-    optional.add_argument("--progress", help=progress_desc, action="store_true")
     optional.add_argument("--save_frames", help=save_frames_desc, action="store_true")
     
     args = parser.parse_args()
@@ -64,8 +62,7 @@ class Network:
         self.exec_network = None
         self.infer_request = None
 
-    #def load_model(self, model, device="GPU"):
-    def load_model(self, model, device="MYRIAD"):    
+    def load_model(self, model, device="GPU"):
         '''
         Load the model given IR files.
         Defaults to CPU as device for use in the workspace.
@@ -129,8 +126,7 @@ def generate_patterns(args):
     plugin = Network()
 
     # Load the network model into the IE
-    #plugin.load_model(args.model, "HETERO:GPU,CPU")
-    plugin.load_model(args.model, "MYRIAD")
+    plugin.load_model(args.model, "HETERO:GPU,CPU")
 
     z_size = 7
     
@@ -193,10 +189,9 @@ def generate_patterns(args):
         if args.save_frames:
             plt.imsave(str(datetime.datetime.now()).replace(":", "-").replace(".", "-") + '.png', output_frame, format="png")
         
-        if args.progress:
-            if (frame + 1) % args.fps == 1:
-                print("\nSec {:03d}:".format(int(frame / args.fps) + 1), end=" ")
-            print("{:3d}".format(frame + 1), end=" ")
+        if (frame + 1) % args.fps == 1:
+            print("\nSec {:03d}:".format(int(frame / args.fps) + 1), end=" ")
+        print("{:3d}".format(frame + 1), end=" ")
     out.release()
     print("\nDone")
 
