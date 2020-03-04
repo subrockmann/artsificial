@@ -35,8 +35,8 @@ def get_args():
     # -- Create the arguments
     required.add_argument("--model", help=model_desc, required=True)
     
-    optional.add_argument("--fps", help=fps_desc, default=15, type=int)
-    optional.add_argument("--seconds", help=seconds_desc, default=10, type=int)
+    optional.add_argument("--fps", help=fps_desc, default=10, type=int)
+    optional.add_argument("--seconds", help=seconds_desc, default=5, type=int)
     optional.add_argument("--img_size", help=img_size_desc, default=200, type=int)
     optional.add_argument("--scale", help=scale_desc, default=0.3, type=float)
     optional.add_argument("--pattern_change_speed", help=p_c_speed_desc, default=0.5, type=float)
