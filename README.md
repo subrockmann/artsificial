@@ -138,7 +138,7 @@ For running the code on Raspberry Pi the following code has to be changed:
 ```
 plugin.load_model("models/ppn-model-1.xml", "MYRIAD") #was "CPU"
 ```
-* ```torch.onnx.export()``` does not work on Raspberry Pi
+* ```torch.onnx.export()``` does not work on Raspberry Pi.
 * Due to a known error (https://software.intel.com/en-us/node/849460) in version 2020.1 the models must be converted to the previous version of IR format: '--generate_deprecated_IR_V7'.
 * The generated .avi files from notebook "4 - Model 2 - Inference.ipynb" are running on Windows but not on Raspberry Pi.
 
