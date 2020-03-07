@@ -120,7 +120,7 @@ optional arguments:
 --save frames                                               Save the individual frame generated as PNG images
 ```
 
-* sample commands for running
+* Sample commands for running
 
 With the compulsory argument:
 ```
@@ -134,7 +134,7 @@ python ppn_app.py --model "models\ppn-model-2.xml" --device HETERO:CPU,GPU --fps
 
 ## Implementation on Raspberry Pi
 
-For running the code on Raspberry Pi the following code has to be changed
+For running the code on Raspberry Pi the following code has to be changed:
 ```
 plugin.load_model("models/ppn-model-1.xml", "MYRIAD") #was "CPU"
 ```
