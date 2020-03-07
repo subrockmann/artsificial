@@ -108,16 +108,16 @@ Run inference [-h] --model MODEL [--device DEVICE] [---fps FPS][seconds SECONDS]
 [--img_size IMG_SIZE] [--scale SCALE] [--pattern_change_speed PATTERN_CHANGE_SPEED][--save_frames]
 
 required arguments:
---model MODEL                                               The location of the model XML file
---device DEVICE                                             The devices on which the inference should be performed [CPU, GPU, FPGA, MYRIAD, HETERO:CPU,GPU]
+--model MODEL                                   The location of the model XML file
+--device DEVICE                                 The devices on which the inference should be performed [CPU, GPU, FPGA, MYRIAD, HETERO:CPU,GPU]
 
 optional arguments:
---fps FPS                                                   Number of Frames Per Second for the video
---seconds SECONDS                                           The duration of the video in seconds
---img_size IMG_SIZE                                         The width or height for the frame to be generated
---scale SCALE                                               Scale factor for inputs
---pattern_change_speed PATTERN_CHANGE_SPEED                 The rate of flow/change of the pattern
---save frames                                               Save the individual frame generated as PNG images
+--fps FPS                                       Number of Frames Per Second for the video
+--seconds SECONDS                               The duration of the video in seconds
+--img_size IMG_SIZE                             The width or height for the frame to be generated
+--scale SCALE                                   Scale factor for inputs
+--pattern_change_speed PATTERN_CHANGE_SPEED     The rate of flow/change of the pattern
+--save frames                                   Save the individual frame generated as PNG images
 ```
 
 * Sample commands for running
