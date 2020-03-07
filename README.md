@@ -1,4 +1,6 @@
 >#  artsificial
+
+![art-gallery](images/GIFs/art_gallery_concept.gif)
 ## Generating art with neural networks
 
 This project uses the [OpenVINO™ toolkit](https://docs.openvinotoolkit.org/) to deploy a deep learning solution for Art Generation 
@@ -72,6 +74,10 @@ We were fascinated by the Compositional Pattern Producing Networks and, since we
   </tr>	
 </table>	
 
+### Future Plans
+
+We would like to work further on the improvement of the project and use it for artistic installations. One big goal could be to produce generative images on Raspberry Pi in real time.
+
 
 ## Getting Started
 
@@ -95,8 +101,47 @@ In order to get a copy of this project up and running on your local machine for 
 ```
 source /opt/intel/openvino/bin/setupvars.sh
 ```
-* start jupyter notebook server
-* run the jupyter notebooks
+* command line arguments
+```
+usage:
+Run inference [-h] --model MODEL [--device DEVICE] [---fps FPS][seconds SECONDS] 
+[--img_size IMG_SIZE] [--scale SCALE] [--pattern_change_speed PATTERN_CHANGE_SPEED][--save_frames]
+
+required arguments:
+--model MODEL                                               The location of the model XML file
+--device DEVICE                                             The devices on which the inference should be performed [CPU, GPU, FPGA, MYRIAD, HETERO:CPU,GPU]
+
+optional arguments:
+--fps FPS                                                   Number of Frames Per Second for the video
+--seconds SECONDS                                           The duration of the video in seconds
+--img_size IMG_SIZE                                         The width or height for the frame to be generated
+--scale SCALE                                               Scale factor for inputs
+--pattern_change_speed PATTERN_CHANGE_SPEED                 The rate of flow/change of the pattern
+--save frames                                               Save the individual frame generated as PNG images
+```
+
+* sample commands for running
+
+With the compulsory argument:
+```
+python ppn_app.py --model "models\ppn-model-2.xml" --device HETERO:CPU,GPU
+```
+
+With the optional arguments:
+```
+python ppn_app.py --model "models\ppn-model-2.xml" --device HETERO:CPU,GPU --fps 15 --seconds 15 --scale 0.2 --pattern_change_speed 0.6 --save_frames
+```
+
+## Implementation on Raspberry Pi
+
+For running the code on Raspberry Pi the following code has to be changed
+```
+plugin.load_model("models/ppn-model-1.xml", "MYRIAD") #was "CPU"
+```
+* ```torch.onnx.export()``` does not work on Raspberry Pi
+* Due to a known error (https://software.intel.com/en-us/node/849460) in version 2020.1 the models must be converted to the previous version of IR format: '--generate_deprecated_IR_V7'.
+* The generated .avi files from notebook "4 - Model 2 - Inference.ipynb" are running on Windows but not on Raspberry Pi.
+
 
 ## Overview
 
@@ -120,7 +165,7 @@ This notebook contains code that helps to understand the basic algorithm used in
 
 ## Contributing
 
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
@@ -136,9 +181,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## Acknowledgements
 
-* Intel® Edge AI Scholaship Challenge at Udacity, for the chance to study within an amazing community.
-* Mariia Denysenko, for the administration of the #sg_spaic and the presentation of CPPNs to the study group.
-* John Guibas, for his PyTorch implementetion of CPPNs.
+* [Intel® Edge AI Scholaship Program](https://www.udacity.com/scholarships/intel-edge-ai-scholarship) at Udacity, for the chance to study within an amazing community.
+* [Mariia Denysenko](https://github.com/MariiaDen), for the administration of the #sg_spaic and the presentation of CPPNs to the study group.
+* [John Guibas](https://github.com/jtguibas), for his PyTorch implementetion of CPPNs.
 
 
 ## References
