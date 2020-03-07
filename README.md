@@ -9,7 +9,7 @@ can be produced.
 
 ### Introduction
 
-Compositional Pattern Producing Networks (CPPNs) are a variation of Artificial Neural Networks with an architecture based in mathematical functions and guided by genetic algorithms.
+[Compositional Pattern Producing Networks](https://en.wikipedia.org/wiki/Compositional_pattern-producing_network) (CPPNs) are a variation of Artificial Neural Networks with an architecture based in mathematical functions and guided by genetic algorithms.
 CPPNs may include many more functions than only Sigmoid and Gaussian and the choice of applied functions can be biased towards different types of produced patterns and regularities. For example, Linear functions can be applied in order to produce linear or fractal-like patterns.
 Furthermore, neuroevolution techniques like Neuroevolution of Augmented Topologies (NEAT) can be applied to evolve CPPNs.
 
@@ -190,4 +190,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 * [Kenneth O' Stanley, Compositional Pattern Producing Networks: A Novel Abstraction of Development](https://eplex.cs.ucf.edu/papers/stanley_gpem07.pdf)
 * [Mattie Tesfaldet, Xavier Snelgrove, David Vazquez, Fourier-CPPNs for Image Synthesis](https://arxiv.org/pdf/1909.09273.pdf)
+* [David Ha, Generating Abstract Patterns with TensorFlow](http://blog.otoro.net/2016/03/25/generating-abstract-patterns-with-tensorflow/)
 * [Neuroevolution](https://en.wikipedia.org/wiki/Neuroevolution)
